@@ -33,7 +33,16 @@ module.exports = {
         spaceId: `aliqirq3u5g5`,
         accessToken: `-L5X1TcaHTxPANLBpiRy2R0jNxfx96_YjIqS6XwUX5c`
       }
-    }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `images`,
+        path: `src/images`,
+      },
+    },
+    `gatsby-plugin-sharp`,
+    `gatsby-transformer-sharp`,
     // this (optional) plugin enables Progressive Web App + Offline functionality
     // To learn more, visit: https://gatsby.dev/offline
     // `gatsby-plugin-offline`,

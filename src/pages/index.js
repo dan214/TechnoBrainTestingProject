@@ -2,13 +2,23 @@ import React from "react";
 import { Link } from "gatsby";
 
 import Layout from "../components/layout";
+import CarouselSlider from 'react-carousel-slider';
 
+const IndexPage = ({ data }) => {
+  const blogPosts = data.allContentfulSliderImage.nodes;
 
-const IndexPage = () => (
+  var images = [];
+
+  for (var item of blogPosts) {
+    var imgObj = {"des":item.name,"imgSrc": item.imageFile.resolutions.src};
+    images.push(imgObj);
+  }
+
+  return(
   <Layout>
     <div className="home">
       <h1>Hello There</h1>
-      <p>Welcome my awesome blog</p>
+      <p>Welcome</p>
       <div>
         <div
           style={{
@@ -18,9 +28,29 @@ const IndexPage = () => (
         >
         </div>
       </div>
+
+      <CarouselSlider slideItems = {images} />
+
       <Link to="/blogposts/">View all posts</Link>
+
     </div>
   </Layout>
-);
+  )
+};
 
 export default IndexPage;
+
+export const query = graphql`
+query MyQuery {
+    allContentfulSliderImage {
+      nodes {
+        name
+        imageFile {
+          resolutions {
+            src
+          }
+        }
+      }
+    }
+  }
+`;
