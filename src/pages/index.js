@@ -3,6 +3,7 @@ import { Link } from "gatsby";
 
 import Layout from "../components/layout";
 import CarouselSlider from 'react-carousel-slider';
+import { graphql } from 'gatsby'
 
 const IndexPage = ({ data }) => {
   const blogPosts = data.allContentfulSliderImage.nodes;
