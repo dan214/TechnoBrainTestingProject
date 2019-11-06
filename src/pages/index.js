@@ -15,6 +15,9 @@ const IndexPage = ({ data }) => {
     images.push(imgObj);
   }
 
+  console.log("images");
+  console.log(images);
+
   return(
   <Layout>
     <div className="home">
