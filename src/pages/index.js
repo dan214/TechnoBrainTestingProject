@@ -9,19 +9,6 @@ import { graphql } from 'gatsby'
 
 const IndexPage = ({ data }) => {
 
-
-  const blogPosts = data.allContentfulSliderImage.nodes;
-
-  var images = [];
-
-  for (var item of blogPosts) {
-    var imgObj = {"des":item.name,"imgSrc": item.imageFile.resolutions.src};
-    images.push(imgObj);
-  }
-
-  console.log("images");
-  console.log(images);
-
   return(
   <Layout>
     <div className="home">
@@ -39,8 +26,6 @@ const IndexPage = ({ data }) => {
 
       <CaruoselSlider />
 
-      <CarouselSlider slideItems = {images} />
-
       <Link to="/blogposts/">View all posts</Link>
 
     </div>
@@ -50,17 +35,3 @@ const IndexPage = ({ data }) => {
 
 export default IndexPage;
 
-export const query = graphql`
-query MyQuery {
-    allContentfulSliderImage {
-      nodes {
-        name
-        imageFile {
-          resolutions {
-            src
-          }
-        }
-      }
-    }
-  }
-`;
