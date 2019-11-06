@@ -3,8 +3,11 @@ import React from 'react'
 import CarouselSlider from 'react-carousel-slider';
 import { StaticQuery, graphql } from 'gatsby'
 
-const Header = ({ data }) => {
+const Header = ({ data,section }) => {
 
+  console.log("data");
+  console.log(data)
+  console.log(section)
     const blogPosts = data.allContentfulSliderImage.nodes;
 
     var images = [];
@@ -23,9 +26,19 @@ const Header = ({ data }) => {
 }
 
 export default class CaruoselSlider extends React.Component {
-
+  constructor(data) {
+    super(data);
+    this.state = {
+        currentSection: false
+    }
+}
+  componentDidMount(){
+    this.state = {
+      currentSection: true
+  }
+  }
     render() {
-        
+      const{currentSection}  = this.state;
         return(   <StaticQuery
             query={graphql`
             query MyQuery {
@@ -41,7 +54,7 @@ export default class CaruoselSlider extends React.Component {
                 }
               }
             `}
-            render={data => <Header data={data} />}
+            render={ data => <Header section={currentSection} data={data}/>}
           />)
     }
 }
