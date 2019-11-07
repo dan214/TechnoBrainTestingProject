@@ -2,9 +2,6 @@ import React from "react";
 import { Link } from "gatsby";
 
 import Layout from "../components/layout";
-import CaruoselSlider from "../components/carousel-slider";
-import CarouselSlider from 'react-carousel-slider';
-import { graphql } from 'gatsby'
 
 
 const IndexPage = ({ data }) => {
