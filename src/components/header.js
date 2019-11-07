@@ -3,21 +3,12 @@ import PropTypes from "prop-types"
 import React from "react"
 
 const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
+  <header className="position-absolute animated slideInDown delay-2s container-fluid header-div">
 
-              
+   <div className="row justify-content">
+
+     <div className="col-lg-2"></div>
+    <div className="col-lg-8 text-right">
     <nav className="navbar navbar-expand-lg navbar-light">
  
 
@@ -36,8 +27,10 @@ const Header = ({ siteTitle }) => (
 
        </div>
      </nav>
+     </div>
+     </div>
   
-    </div>
+    
   </header>
 )
 
