@@ -24,6 +24,16 @@
 
 }
 
+.read-more-button{
+    cursor: pointer;
+    color: #007bff;
+}
+.displayed-text{
+    color: #929191;
+    font-weight: 300;
+    font-size: 16px;
+}
+
 .news-item:hover {
     transform: scale(1.03);
     height: auto;

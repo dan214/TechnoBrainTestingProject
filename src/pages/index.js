@@ -2,6 +2,7 @@ import React from "react";
 import { Link } from "gatsby";
 import Img from "gatsby-image"
 import Layout from "../components/layout";
+import ReadMoreReact from 'read-more-react';
 
 
 const IndexPage = ({ data }) => {
@@ -48,7 +49,12 @@ const IndexPage = ({ data }) => {
             </div>
             <div className="row">
               <div className="col-lg-12">
-            <p className="body-text">{post.body.body}</p>
+              <ReadMoreReact text={post.body.body}
+                min={80}
+                ideal={100}
+                max={200}
+                readMoreText="Read more"/>
+            <p className="body-text"></p>
             </div>
             </div>
             </div>
