@@ -24,18 +24,39 @@ const IndexPage = ({ data }) => {
       </div>
 
       <div className="container">
-        <div className="row">
-          <div className="offset-lg-1"></div>
+       
+          
       {blogPosts.map(({ node: post }) => (
-          <div className="col-lg-3 news-item" key={post.id}>
-            <div>
+         <div className="row">
+          <div className="col-lg-12 news-item" key={post.id}>
+            <div className="row">
+              <div className="col-lg-3">
             <Img alt={post.title} sizes={post.image.sizes}/>
             </div>
+            <div className="col-lg-8 text-div">
+            <div className="tags">
+          {post.tags.map(tag => (
+            <span className="tag" key={tag}>
+              {tag}
+            </span>
+          ))}
+        </div>
+            <div className="row">
+              <div className="col-lg-12">
             <Link to={`/blogpost/${post.slug}`}>{post.title}</Link>
+            </div>
+            </div>
+            <div className="row">
+              <div className="col-lg-12">
             <p className="body-text">{post.body.body}</p>
+            </div>
+            </div>
+            </div>
+            </div>
+          </div>
           </div>
         ))}
-        </div>
+        
         </div>
 
       <Link to="/blogposts/">View all posts</Link>

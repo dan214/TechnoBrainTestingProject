@@ -11,6 +11,12 @@
 .body-text{
     font-size: 16px;
 }
+.news-item .text-div{
+    text-align: left;
+}
+.news-item .tags{
+    margin-bottom: 0%;
+}
 
 .gatsby-image-wrapper{
     max-height: 200px;
