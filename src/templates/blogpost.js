@@ -2,6 +2,7 @@ import React from "react";
 import { Link, graphql } from "gatsby";
 import Layout from "../components/layout";
 import SEO from "../components/seo";
+import Img from "gatsby-image"
 
 const BlogPost = ({ data }) => {
   const { title, body, image, tags } = data.contentfulBlogPost;
@@ -10,7 +11,7 @@ const BlogPost = ({ data }) => {
       <SEO title={title} />
       <div className="blogpost">
         <h1>{title}</h1>
-        <img alt={title} src={image.file.url} />
+        <Img alt={title} sizes={image.sizes}/>
         <div className="tags">
           {tags.map(tag => (
             <span className="tag" key={tag}>
@@ -37,9 +38,9 @@ export const pageQuery = graphql`
         body
       }
       image {
-        file {
-          url
-        }
+        sizes(resizingBehavior: SCALE) {
+          ...GatsbyContentfulSizes_withWebp
+         }
       }
       tags
     }

@@ -37,9 +37,9 @@ export const query = graphql`
             body
           }
           image {
-            file {
-              url
-            }
+            sizes(resizingBehavior: SCALE) {
+              ...GatsbyContentfulSizes_withWebp
+             }
           }
           tags
         }
