@@ -1,0 +1,19 @@
+.news-item
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid rgb(95, 158, 159);
+    padding: 20px;
+    font-size: 30px;
+    text-align: center;
+    border-radius: 5px;
+    margin: 1px;
+}
+.body-text{
+    font-size: 16px;
+}
+
+.gatsby-image-wrapper{
+    max-height: 200px;
+    min-height: 200px;
+
+}
