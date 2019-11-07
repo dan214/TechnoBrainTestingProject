@@ -5,20 +5,20 @@ import { StaticQuery, graphql } from 'gatsby'
 
 const Header = ({ data,section }) => {
 
-  console.log("data");
-  console.log(data)
-  console.log(section)
     const blogPosts = data.allContentfulSliderImage.nodes;
 
-    var images = [];
+    var images = [
+      {
+        "des":"First image with some description",
+        "imgSrc":"./src/images/img1.jpg"
+      }
+    ];
   
     for (var item of blogPosts) {
       var imgObj = {"des":item.name,"imgSrc": item.imageFile.resolutions.src};
       images.push(imgObj);
     }
-  
-    console.log("images");
-    console.log(images);
+
 
     return (
         <CarouselSlider slideItems = {images} />

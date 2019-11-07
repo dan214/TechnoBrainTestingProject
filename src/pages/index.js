@@ -24,8 +24,6 @@ const IndexPage = ({ data }) => {
         </div>
       </div>
 
-      <CaruoselSlider />
-
       <Link to="/blogposts/">View all posts</Link>
 
     </div>
