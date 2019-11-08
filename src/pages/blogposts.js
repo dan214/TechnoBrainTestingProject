@@ -15,7 +15,7 @@ const BlogPosts = ({ data }) => {
             <h1>{"Here's a list of all blogposts!"}</h1>
       <div className="blogposts">
         {blogPosts.map(({ node: post }) => (
-                      <div key={post.id} className="row animated bounceIn delay-1s">
+                      <div key={post.id} className="row animated bounceIn">
                       <div className="col-lg-12 news-item" key={post.id}>
                           <div className="row">
                               <div className="col-lg-3">
