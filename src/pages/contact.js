@@ -10,7 +10,8 @@ const Contact = () => {
                 <div className="news-item contact-div contact-us">
                     <div className="">
                 <h2>{"We would love to hear from you!"}</h2>
-                    <form name="contact" action="/success" method="POST" data-netlify="true">
+                    <form name="contact" netlify-honeypot="bot-field" action="/success" method="POST" data-netlify="true">
+                    <input type="hidden" name="bot-field" />
                         <div class="form-group row">
 
                             <label className="col-lg-2">Name: </label>
