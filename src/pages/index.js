@@ -1,5 +1,4 @@
 import React from "react";
-
 import Layout from "../components/layout";
 import HomeComponent from "../components/homeComponent";
 import 'animate.css/animate.css';
