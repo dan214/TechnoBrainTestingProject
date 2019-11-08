@@ -104,6 +104,7 @@ video#background-video{
     object-fit: cover;
     -o-object-position: center center!important;
     object-position: center center!important;
+    opacity: 0.9;
 }
 
 .home .headline{
