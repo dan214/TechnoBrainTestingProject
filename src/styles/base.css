@@ -39,7 +39,7 @@
     line-height: 1;
 }
 
-.news-item:hover {
+.home .news-item:hover {
     transform: scale(1.03);
     height: auto;
     border: 1px solid #cececed9;
