@@ -5,7 +5,7 @@ import React from "react"
 const Header = ({ siteTitle }) => (
   <header className="position-absolute animated slideInDown delay-2s container-fluid header-div">
 
-   <div className="row justify-content">
+   <div className="row justify-content-between header-inner-div">
 
      <div className="col-lg-2"></div>
     <div className="col-lg-8 text-right">

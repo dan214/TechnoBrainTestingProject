@@ -119,3 +119,10 @@ video#background-video{
     z-index: 99999;
 
 }
+
+.header-inline-div{
+    justify-content: space-between!important;
+    width: calc(100% - 10vmin);
+    margin: 0 auto;
+    padding: 5vmin 0;
+}
