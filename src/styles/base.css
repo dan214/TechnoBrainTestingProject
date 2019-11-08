@@ -118,7 +118,7 @@ video#background-video{
 
 .header-div{
     z-index: 99999;
-
+    background: #404040;
 }
 
 .header-inline-div{
