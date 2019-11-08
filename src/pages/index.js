@@ -28,7 +28,11 @@ const IndexPage = ({ data }) => {
         
           <div className="animated headline fadeInRight">
             <h1>Hello There</h1>
-            <p>Welcome</p>
+            <p>Welcome to our news site</p>
+            <p><i>Providing you with the latest news at your fingertips!</i></p>
+            <div className="animated delay-1s fadeInUp">
+              <Link className="btn" title="Contact us today" aria-label="News" to="/contact">Browse our news posts</Link>
+            </div>
           </div>
 
         </div>

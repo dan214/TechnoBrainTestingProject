@@ -100,7 +100,6 @@ video#background-video{
     -webkit-transform: translateX(0) translateY(0);
     transform: translateX(0) translateY(0);
     min-width: 100%;
-    opacity: 0.8;
     min-height: 100vh;
     object-fit: cover;
     -o-object-position: center center!important;
@@ -109,7 +108,7 @@ video#background-video{
 
 .home .headline{
     position: absolute;
-    top: 40%;
+    top: 10%;
     left: 15%;
     width: 70%;
     z-index: 9;
