@@ -30,7 +30,7 @@
     margin-top: 5px;
 }
 .displayed-text{
-    color: #929191;
+    color: #404040;
     font-weight: 300;
     font-size: 16px;
 }
@@ -70,7 +70,7 @@
     font-weight: 700;
     padding-bottom: 10px;
     font-size: 50px;
-    color: #fff;
+    color: #d9d9d9;
     text-align: center;
 }
 
@@ -86,7 +86,7 @@ a.nav-link{
     display: -webkit-inline-flex;
     display: inline-flex;
     color: #fff!important;
-    background: #72b84c!important;
+    background: cadetblue !important;
     padding: 10px 40px;
     font-size: 22px;
     font-family: MyriadPro Bold,Arial,Helvetica,sans-serif;
@@ -126,4 +126,8 @@ video#background-video{
     width: calc(100% - 10vmin);
     margin: 0 auto;
     padding: 5vmin 0;
+}
+
+.text-div a{
+    color: #404040;
 }
