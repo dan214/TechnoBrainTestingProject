@@ -90,7 +90,7 @@ a.nav-link{
     padding: 10px 40px;
     font-size: 22px;
     margin: 0 0 10px;
-    border-radius: inherit;
+    border-radius: 5px;
 }
 
 video#background-video{
@@ -103,7 +103,7 @@ video#background-video{
     object-fit: cover;
     -o-object-position: center center!important;
     object-position: center center!important;
-    opacity: 0.9;
+    opacity: 0.8;
 }
 
 .home .headline{
@@ -129,4 +129,11 @@ video#background-video{
 
 .text-div a{
     color: #404040;
+}
+
+.contact-us label{
+    font-size: 16px;
+}
+.contact-div{
+    margin: 76px !important;
 }
