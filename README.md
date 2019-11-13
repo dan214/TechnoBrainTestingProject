@@ -1,13 +1,13 @@
-Clone this project
+- Clone this project
 
-Install gatsby globally
+- Install gatsby globally
 
 npm i -g gatsby
 
-Then cd into the project install the node packages
+- Then cd into the project install the node packages
 
 npm install
 
-Once complete, run the server
+- Once complete, run the server
 
 gatsby develop
